@@ -1,11 +1,14 @@
-var bodyX = 200;
-var bodyY = 220;
-var bodyW = 118;
-var bodyH = bodyW/2;
+void setup()
+{
+  size(200,200);
+  background(125);
+  fill(255);
+  noLoop();
+  PFont fontA = loadFont("courier");
+  textFont(fontA, 14);  
+}
 
-draw = function() {
-    background(207, 254, 255);
-    fill(240, 209, 36);
-    ellipse(bodyX, bodyY, bodyW, 106); // body?
-    ellipse(bodyX, bodyY-70, bodyH, 47); // face?
-};
+void draw(){  
+  text("Hello Web!",20,20);
+  println("Hello ErrorLog!");
+}
